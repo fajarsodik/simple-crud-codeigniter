@@ -36,7 +36,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?php echo base_url('kepoin/mantap/profile/detail/' . $this->session->userdata('username')); ?>" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href="<?php echo base_url('control/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
@@ -77,7 +77,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active">
-          <a href="<?php echo base_url('kepoin/mantap/'); ?>">
+          <a href="<?php echo base_url('control'); ?>">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
@@ -90,14 +90,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/profile/detail/' . $this->session->userdata('username')); ?>"><i class="fa fa-circle-o"></i> Setting Profile</a></li>
-            <li><a href="<?php echo base_url('kepoin/mantap/profile/manage') ?>"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Setting Profile</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-user-o"></i>
-            <span>Members</span>
+            <span>Users</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -106,82 +106,6 @@
             <li><a href="<?php echo base_url('kepoin/mantap/member/') ?>"><i class="fa fa-circle-o"></i>List Member</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
             <li><a href="#"><i class="fa fa-circle-o"></i>Aktivasi Manual</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-shopping-cart"></i>
-            <span>Projects</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/projects/') ?>"><i class="fa fa-circle-o"></i>All Projects</a></li>
-            <li><a href="<?php echo base_url('kepoin/mantap/projects/') ?>"><i class="fa fa-circle-o"></i>Provider Projects</a></li>
-            <li><a href="<?php echo base_url('kepoin/mantap/projects/') ?>"><i class="fa fa-circle-o"></i>Technician Projects</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-users"></i>
-            <span>Provider</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/provider') ?>"><i class="fa fa-circle-o"></i>List Provider</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Aktivasi Manual</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Provider Premium</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Provider Pro</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Provider Rating</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Payment Provider</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-user-circle"></i>
-            <span>Technician</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/technician') ?>"><i class="fa fa-circle-o"></i>List Technician</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Aktivasi Manual</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Technician Premium</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Technician Pro</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Technician Rating</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Payment Technician</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-list-alt"></i>
-            <span>Web Content</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/webContent/meta') ?>"><i class="fa fa-circle-o"></i>Meta Tag</a></li>
-            <li><a href="<?php echo base_url('kepoin/mantap/webContent/logo') ?>"><i class="fa fa-circle-o"></i>Icon</a></li>
-          </ul>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-tasks"></i>
-            <span>Maintenance</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li> <a href="<?php echo base_url('kepoin/mantap/maintenance/todo') ?>"><i class="fa fa-circle-o"></i>To Do List</a></li>
-            <li> <a href="<?php echo base_url('kepoin/mantap/maintenance/rekeningGetIt') ?>"><i class="fa fa-circle-o"></i>Rekening Get-IT</a></li>
           </ul>
         </li>
 
@@ -200,77 +124,13 @@
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="<?php echo base_url('kepoin/kepo'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="<?php echo base_url('control'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
-
-              <p>Projects</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="<?= base_url('kepoin/mantap/projects') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53</h3>
-
-              <p>Provider</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="<?php echo base_url('kepoin/mantap/provider/'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="<?php echo base_url('kepoin/mantap/member'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Technician</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="<?php echo base_url('kepoin/mantap/technician/') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-      </div>
-      <!-- /.row -->
       <!-- Main row -->
       <div class="row">
         <!-- Left col -->
@@ -387,7 +247,7 @@
             <!-- /.box-body -->
             <div class="box-footer clearfix no-border">
               <!-- <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button> -->
-              <a href="<?php echo base_url('kepoin/mantap/manitenance/todo/'); ?>" class="btn btn-default pull-right">See All Todo</a>
+              <a href="#" class="btn btn-default pull-right">See All Todo</a>
             </div>
           </div>
           <!-- /.box -->
