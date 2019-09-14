@@ -21,7 +21,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url("assets/non-public/admin_photo.png") ?>" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $profile_data->nama_admin; ?></span>
+              <span class="hidden-xs">Admin</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -29,8 +29,7 @@
                 <img src="<?php echo base_url("assets/non-public/admin_photo.png"); ?>" class="img-circle" alt="User Image">
 
                 <p>
-                  <?php echo $profile_data->nama_admin ?> - <?php echo $profile_data->role ?>
-                  <small>Member since <?php echo $profile_data->first_login ?></small>
+                  Admin - Admin
                 </p>
               </li>
               <!-- Menu Body -->
@@ -40,7 +39,7 @@
                   <a href="<?php echo base_url('kepoin/mantap/profile/detail/' . $this->session->userdata('username')); ?>" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?php echo base_url('kepoin/mantap/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url('control/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -59,7 +58,7 @@
           <img src="<?php echo base_url("assets/non-public/admin_photo.png") ?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?php echo $profile_data->nama_admin ?></p>
+          <p>Admin</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
