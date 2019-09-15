@@ -103,9 +103,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('kepoin/mantap/member/') ?>"><i class="fa fa-circle-o"></i>List Member</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Hapus Akun</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Aktivasi Manual</a></li>
+            <li><a href="<?= base_url('control/user_list') ?>"><i class="fa fa-circle-o"></i>List Member</a></li>
           </ul>
         </li>
 
